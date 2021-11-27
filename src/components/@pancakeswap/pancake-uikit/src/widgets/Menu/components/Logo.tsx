@@ -55,7 +55,7 @@ const Logo: React.FC<Props> = ({ isDark, href }) => {
 
   return (
     <Flex>
-      {isAbsoluteUrl ? (
+      {/* {isAbsoluteUrl ? (
         // <StyledLink as="a" href={href} aria-label="Pancake home page">
           <StyledLink to={href} aria-label="Pancake home page">
           {innerLogo}
@@ -64,7 +64,7 @@ const Logo: React.FC<Props> = ({ isDark, href }) => {
         <StyledLink to={href} aria-label="Pancake home page">
           {innerLogo}
         </StyledLink>
-      )}
+      )} */}
     </Flex>
   );
 };

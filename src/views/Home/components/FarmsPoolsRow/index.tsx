@@ -51,7 +51,7 @@ const FarmsPoolsRow = () => {
 
   const getPoolText = (pool: DeserializedPool) => {
     if (pool.isAutoVault) {
-      return t('Auto CAKE')
+      return t('Auto VEGASCOIN')
     }
 
     if (pool.sousId === 0) {

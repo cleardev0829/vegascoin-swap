@@ -56,7 +56,7 @@ const DetailsView: React.FC<DetailsViewProps> = ({
       </Flex>
       <Flex alignItems="center" justifyContent="space-between" mb="4px">
         <Text color="textSubtle" fontSize="16px">
-          {t('Auto CAKE Pool')}
+          {t('Auto VEGASCOIN Pool')}
         </Text>
         <Text textAlign="right">{formatNumber(cakeVaultBalance, 0, 3)}</Text>
       </Flex>

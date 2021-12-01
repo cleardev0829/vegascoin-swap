@@ -88,8 +88,10 @@ const FarmAuctionsBanner = () => {
     <Wrapper>
       <Inner>
         <LeftWrapper>
-          <StyledSubheading>{t('%num% Contenders...', { num: 21 })}</StyledSubheading>
-          <StyledHeading scale="xl">{t('%num% Winners', { num: 3 })}</StyledHeading>
+          {/* <StyledSubheading>{t('%num% Contenders...', { num: 21 })}</StyledSubheading>
+          <StyledHeading scale="xl">{t('%num% Winners', { num: 3 })}</StyledHeading> */}
+          <StyledSubheading>Starting Soon</StyledSubheading>
+          <StyledHeading scale="xl">Join Our $5,000,000 VEGASCOIN Token Giveaway!</StyledHeading>
           {/* <Link to="/farms/auction">
             <Button>
               <Text color="invertedContrast" bold fontSize="16px" mr="4px">
@@ -100,7 +102,7 @@ const FarmAuctionsBanner = () => {
           </Link> */}
         </LeftWrapper>
         <RightWrapper>
-          <img src="/images/decorations/auction-bunny.png" alt={t('auction bunny')} />
+          <img src="/images/vegas/Dex Sprite 1.png" alt={t('auction bunny')} />
         </RightWrapper>
       </Inner>
     </Wrapper>

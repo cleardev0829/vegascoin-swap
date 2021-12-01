@@ -75,7 +75,7 @@ const Home: React.FC = () => {
         </Flex>
         <Hero />
       </StyledHeroSection>
-      <PageSection
+      {/* <PageSection
         innerProps={{ style: { margin: '0', width: '100%' } }}
         background={
           theme.isDark
@@ -142,7 +142,7 @@ const Home: React.FC = () => {
         hasCurvedDivider={false}
       >
         <Footer />
-      </PageSection>
+      </PageSection> */}
     </>
   )
 }

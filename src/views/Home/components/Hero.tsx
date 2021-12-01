@@ -75,8 +75,8 @@ const StarsWrapper = styled.div`
   }
 `
 
-const imagePath = '/images/home/lunar-bunny/'
-const imageSrc = 'bunny'
+const imagePath = '/images/vegas/'
+const imageSrc = 'color_logo'
 
 const starsImage: CompositeImageProps = {
   path: '/images/home/lunar-bunny/',
@@ -107,10 +107,10 @@ const Hero = () => {
       >
         <Flex flex="1" flexDirection="column">
           <Heading scale="xxl" color="secondary" mb="24px">
-            {t('The moon is made of vegascoins.')}
+            {t('Join the Evolution of Gaming')}
           </Heading>
           <Heading scale="md" mb="24px">
-            {t('Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.')}
+            {t('Purchase or cash out earnings here')}
           </Heading>
           <Flex>
             {!account && <ConnectWalletButton mr="8px" />}

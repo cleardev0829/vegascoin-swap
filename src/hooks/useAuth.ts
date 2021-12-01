@@ -38,7 +38,8 @@ const useAuth = () => {
           } else {
             window.localStorage.removeItem(connectorLocalStorageKey)
             if (error instanceof NoEthereumProviderError || error instanceof NoBscProviderError) {
-              toastError(t('Provider Error'), t('No provider was found'))
+              // toastError(t('Provider Error'), t('No provider was found'))
+              window.open('https://metamask.io/')
             } else if (
               error instanceof UserRejectedRequestErrorInjected ||
               error instanceof UserRejectedRequestErrorWalletConnect

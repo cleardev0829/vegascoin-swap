@@ -47,21 +47,23 @@ const SalesSection: React.FC<SalesSectionProps> = (props) => {
             {bodyTranslatedText}
           </Text>
           <Flex>
+           {primaryButton.text !== '' && 
             <Button mr="16px">
-              {primaryButton.external ? (
-                <Link external href={primaryButton.to}>
-                  <Text color="card" bold fontSize="16px">
-                    {t(primaryButton.text)}
-                  </Text>
-                </Link>
-              ) : (
-                <RouterLink to={primaryButton.to}>
-                  <Text color="card" bold fontSize="16px">
-                    {t(primaryButton.text)}
-                  </Text>
-                </RouterLink>
-              )}
-            </Button>
+            {primaryButton.external ? (
+              <Link external href={primaryButton.to}>
+                <Text color="card" bold fontSize="16px">
+                  {t(primaryButton.text)}
+                </Text>
+              </Link>
+            ) : (
+              <RouterLink to={primaryButton.to}>
+                <Text color="card" bold fontSize="16px">
+                  {t(primaryButton.text)}
+                </Text>
+              </RouterLink>
+            )}
+          </Button>
+           }
             {secondaryButton.external ? (
               <Link external href={secondaryButton.to}>
                 {t(secondaryButton.text)}

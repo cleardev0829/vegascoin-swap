@@ -100,7 +100,7 @@ const LotteryCardContent = () => {
           {t('Buy tickets with VEGASCOIN, win VEGASCOIN if your numbers match')}
         </Text>
       </Flex>
-      <Flex alignItems="center" justifyContent="center">
+      {/* <Flex alignItems="center" justifyContent="center">
         <StyledLink to="/lottery" id="homepage-prediction-cta">
           <Button width="100%">
             <Text bold color="invertedContrast">
@@ -109,7 +109,7 @@ const LotteryCardContent = () => {
             <ArrowForwardIcon ml="4px" color="invertedContrast" />
           </Button>
         </StyledLink>
-      </Flex>
+      </Flex> */}
     </>
   )
 }

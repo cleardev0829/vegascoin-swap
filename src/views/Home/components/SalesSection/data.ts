@@ -31,7 +31,8 @@ export const earnSectionData: SalesSectionProps = {
   reverse: true,
   primaryButton: {
     to: '/farms',
-    text: 'Explore',
+    // text: 'Explore',
+    text: '',
     external: false,
   },
   secondaryButton: {

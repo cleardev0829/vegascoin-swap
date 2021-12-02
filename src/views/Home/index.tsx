@@ -20,7 +20,7 @@ import FarmAuctionsBanner from './components/Banners/FarmAuctionsBanner'
 
 const StyledHeroSection = styled(PageSection)`
   padding-top: 16px;
-
+  background-image: url("/images/vegas/background.png");
   ${({ theme }) => theme.mediaQueries.md} {
     padding-top: 48px;
   }
@@ -69,7 +69,7 @@ const Home: React.FC = () => {
         <Flex
           pt={[account ? '220px' : '0', null, null, account ? '76px' : '0']}
           mt={[account ? '0' : '-16px', null, null, account ? '0' : '-48px']}
-          pb="24px"
+          // pb="24px"
         >
           <FarmAuctionsBanner />
         </Flex>

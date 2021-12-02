@@ -31,6 +31,7 @@ const StyledHeading = styled(Heading)`
 `
 
 const Wrapper = styled.div`
+margin-top: 32px;
   border-radius: 32px;
   width: 100%;
   background-image: linear-gradient(#7645d9, #452a7a);
@@ -90,7 +91,7 @@ const FarmAuctionsBanner = () => {
         <LeftWrapper>
           {/* <StyledSubheading>{t('%num% Contenders...', { num: 21 })}</StyledSubheading>
           <StyledHeading scale="xl">{t('%num% Winners', { num: 3 })}</StyledHeading> */}
-          <StyledSubheading>Starting Soon</StyledSubheading>
+          <StyledSubheading>Starting Soon...</StyledSubheading>
           <StyledHeading scale="xl">Join Our $5,000,000 VEGASCOIN Token Giveaway!</StyledHeading>
           {/* <Link to="/farms/auction">
             <Button>

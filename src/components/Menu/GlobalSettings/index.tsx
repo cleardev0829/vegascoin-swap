@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, IconButton, CogIcon, useModal } from '@pancakeswap/uikit'
+import { Flex, IconButton, CogIcon, useModal } from 'components/@pancakeswap/pancake-uikit/src'
 import SettingsModal from './SettingsModal'
 
 const GlobalSettings = () => {

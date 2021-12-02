@@ -6,6 +6,7 @@ import { useWeb3React } from '@web3-react/core'
 import useTheme from 'hooks/useTheme'
 import Container from 'components/Layout/Container'
 import { PageMeta } from 'components/Layout/Page'
+import { MENU_HEIGHT } from 'components/@pancakeswap/pancake-uikit/src/widgets/Menu/config'
 import Hero from './components/Hero'
 import { swapSectionData, earnSectionData, cakeSectionData } from './components/SalesSection/data'
 import MetricsSection from './components/MetricsSection'
@@ -19,10 +20,10 @@ import UserBanner from './components/UserBanner'
 import FarmAuctionsBanner from './components/Banners/FarmAuctionsBanner'
 
 const StyledHeroSection = styled(PageSection)`
-  padding-top: 16px;
+  padding-top: ${MENU_HEIGHT + 16}px;
   background-image: url("/images/vegas/background.png");
   ${({ theme }) => theme.mediaQueries.md} {
-    padding-top: 48px;
+    padding-top: ${MENU_HEIGHT + 32}px;
   }
 `
 

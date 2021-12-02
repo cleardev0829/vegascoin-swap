@@ -153,7 +153,7 @@ const Menu: React.FC<NavProps> = ({
           </Flex>
         </StyledNav>
       </FixedContainer>
-      {subLinks && (
+      {/* {subLinks && (
         <Flex justifyContent="space-around">
           <SubMenuItems items={subLinksWithoutMobile} mt={`${totalTopMenuHeight + 1}px`} activeItem={activeSubItem} />
 
@@ -166,7 +166,7 @@ const Menu: React.FC<NavProps> = ({
             />
           )}
         </Flex>
-      )}
+      )} */}
       {/* <BodyWrapper mt={!subLinks ? `${totalTopMenuHeight + 1}px` : "0"}> */}
       <BodyWrapper>
         <Inner isPushed={false} showMenu={showMenu}>

@@ -20,10 +20,15 @@ import UserBanner from './components/UserBanner'
 import FarmAuctionsBanner from './components/Banners/FarmAuctionsBanner'
 
 const StyledHeroSection = styled(PageSection)`
-  padding-top: ${MENU_HEIGHT + 16}px;
+  // padding-top: ${MENU_HEIGHT + 16}px;
   background-image: url("/images/vegas/background.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   ${({ theme }) => theme.mediaQueries.md} {
-    padding-top: ${MENU_HEIGHT + 32}px;
+    // padding-top: ${MENU_HEIGHT + 32}px;
   }
 `
 
@@ -54,11 +59,11 @@ const Home: React.FC = () => {
       <PageMeta />
       <StyledHeroSection
         innerProps={{ style: { margin: '0', width: '100%' } }}
-        background={
-          theme.isDark
-            ? 'radial-gradient(103.12% 50% at 50% 50%, #21193A 0%, #191326 100%)'
-            : 'linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)'
-        }
+        // background={
+        //   theme.isDark
+        //     ? 'radial-gradient(103.12% 50% at 50% 50%, #21193A 0%, #191326 100%)'
+        //     : 'linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)'
+        // }
         index={2}
         hasCurvedDivider={false}
       >
@@ -67,13 +72,13 @@ const Home: React.FC = () => {
             <UserBanner />
           </UserBannerWrapper>
         )}
-        <Flex
+        {/* <Flex
           pt={[account ? '220px' : '0', null, null, account ? '76px' : '0']}
           mt={[account ? '0' : '-16px', null, null, account ? '0' : '-48px']}
           // pb="24px"
-        >
+        > */}
           <FarmAuctionsBanner />
-        </Flex>
+        {/* </Flex> */}
         <Hero />
       </StyledHeroSection>
       {/* <PageSection

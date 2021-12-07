@@ -4,7 +4,7 @@ import { SvgProps } from "../types";
 
 const Icon: React.FC<SvgProps> = (props) => {
   return (
-    <img src='/images/vegas/color_logo.png' alt='logo' style={{width: 62, height: 56}} />
+    <img src='/images/home/lunar-bunny/bunny.png' alt='logo' style={{width: 62, height: 56}} />
     // <Svg viewBox="0 0 32 32" {...props}>
     //   <path
     //     fillRule="evenodd"

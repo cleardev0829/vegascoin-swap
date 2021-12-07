@@ -5,11 +5,12 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'contexts/Localization'
 
 const StyledSubheading = styled(Heading)`
-  background: -webkit-linear-gradient(#ffd800, #eb8c00);
+  // background: -webkit-linear-gradient(#ffd800, #eb8c00);
   font-size: 20px;
+  color: white;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  // -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
   ${({ theme }) => theme.mediaQueries.xs} {
     font-size: 24px;
@@ -25,16 +26,16 @@ const StyledHeading = styled(Heading)`
   background: -webkit-linear-gradient(#7645d9 0%, #452a7a 100%);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-stroke: 6px transparent;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  // -webkit-text-stroke: 6px transparent;
+  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 16px;
 `
-
+// 7ab5ff 0935d1
 const Wrapper = styled.div`
-margin-top: 32px;
+  // margin-top: 32px;
   border-radius: 32px;
   width: 100%;
-  background-image: linear-gradient(#7645d9, #452a7a);
+  background-image: linear-gradient(45deg, #7ab5ff, #0935d1);
   max-height: max-content;
   overflow: hidden;
 `
@@ -103,7 +104,7 @@ const FarmAuctionsBanner = () => {
           </Link> */}
         </LeftWrapper>
         <RightWrapper>
-          <img src="/images/vegas/Dex Sprite 1.png" alt={t('auction bunny')} />
+          <img src="/images/home/lunar-bunny/sprite.png" alt={t('auction bunny')} />
         </RightWrapper>
       </Inner>
     </Wrapper>

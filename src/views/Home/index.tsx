@@ -36,7 +36,7 @@ const UserBannerWrapper = styled(Container)`
   z-index: 1;
   position: absolute;
   width: 100%;
-  top: 0;
+  top: 20;
   left: 50%;
   transform: translate(-50%, 0);
   padding-left: 0px;
@@ -67,11 +67,11 @@ const Home: React.FC = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        {account && (
+        {/* {account && (
           <UserBannerWrapper>
             <UserBanner />
           </UserBannerWrapper>
-        )}
+        )} */}
         {/* <Flex
           pt={[account ? '220px' : '0', null, null, account ? '76px' : '0']}
           mt={[account ? '0' : '-16px', null, null, account ? '0' : '-48px']}
